@@ -1,0 +1,11 @@
+# Raw / processed datasets — download separately, see README (redistribution licensing + size)
+data/raw/
+data/processed/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+.DS_Store
