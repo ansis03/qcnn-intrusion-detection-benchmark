@@ -21,9 +21,9 @@ experiments/           Entry-point scripts (one per dataset + a CICIDS prep step
 config/config.yaml     Reference listing of experiment settings (not auto-loaded —
                         the scripts below hardcode the same values; kept for
                         documentation / quick lookup)
-results_*/              Full experiment outputs — results_final.json (metrics per
-                        run) + params/*.npy (trained QCNN parameters) for every
-                        (dataset, ansatz, N) combination reported in the paper
+results_*/              results_final.json — every metric (F1, accuracy, margins, etc.)
+                        for every run, for every (dataset, ansatz, N) combination
+                        reported in the paper
 figures/                Final PDF/PNG figures used in the paper
 gen_figures.py          Regenerates all figures from results_*/
 ```
@@ -31,6 +31,13 @@ gen_figures.py          Regenerates all figures from results_*/
 Naming convention: `results_ansatz_*` = NSL-KDD ansatz sweep, `results_cicids_*`
 / `results_toniot_*` = the same sweep on the other two datasets, `*_largeN` =
 the N ∈ {10,000, 17,534} extension (U_TTN and U_5 only, all 3 datasets).
+
+Note: trained QCNN circuit parameters (`params/*.npy`) and intermediate
+checkpoints (`results_partial.json`) are produced locally when you run an
+experiment but aren't tracked here — `results_final.json` already carries
+every metric used anywhere in the paper, and the parameters themselves are
+exactly reproducible by rerunning with the documented seeds, so versioning
+them added ~400 small files without adding anything verifiable.
 
 ## Quick start
 
@@ -70,10 +77,10 @@ python experiments/run_experiment_toniot.py --ansatz U_SU4 --u_params 15 --resul
 `U_SO4`/6, `U_5`/10, `U_SU4`/15 (see paper Table 0 / `QCNN/unitary.py`).
 
 Every run trains QCNN, 1D-CNN, and SVM on identical data splits/seeds and
-writes `results_final.json` (+ `params/*.npy` per run) to `--results_dir`.
-The `results_*/` folders already in this repo are the exact outputs the
-paper's tables and figures were generated from — you don't need to rerun
-anything to inspect or reuse them.
+writes `results_final.json` (+ the trained QCNN parameters, as `params/*.npy`,
+gitignored locally) to `--results_dir`. The `results_final.json` files already
+in this repo are the exact outputs the paper's tables and figures were
+generated from — you don't need to rerun anything to inspect or reuse them.
 
 ### 3. Regenerate figures
 

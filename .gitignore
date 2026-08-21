@@ -8,4 +8,11 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
+# Per-run experiment artifacts — not needed to verify/reproduce results:
+# results_final.json (kept, tracked) already has every metric the paper's
+# tables/figures use. Trained circuit params are regenerable by rerunning
+# with the same seed (see README), so they aren't versioned here.
+results_*/params/
+results_*/results_partial.json
+
 .DS_Store
