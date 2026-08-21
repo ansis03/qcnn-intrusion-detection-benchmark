@@ -24,7 +24,8 @@ config/config.yaml     Reference listing of experiment settings (not auto-loaded
 results/<dataset>/<ansatz>/results_final.json
                         every metric (F1, accuracy, margins, etc.) for every
                         run, for every (dataset, ansatz, N) combination
-                        reported in the paper
+                        reported in the paper — field-by-field meaning in
+                        results/README.md
 figures/                Final PDF/PNG figures used in the paper
 gen_figures.py          Regenerates all figures from results/
 ```
