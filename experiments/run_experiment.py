@@ -3,7 +3,7 @@
 사용법: python experiments/run_experiment.py
         python experiments/run_experiment.py --n_sizes 50 100 500
         python experiments/run_experiment.py --steps 50  (quick test)
-        python experiments/run_experiment.py --ansatz U_15 --u_params 4 --results_dir results_ansatz_u15
+        python experiments/run_experiment.py --ansatz U_15 --u_params 4 --results_dir results/nsl-kdd/u15
 """
 
 import argparse, sys, os, json, time
@@ -28,7 +28,7 @@ BATCH_SIZE  = 25
 QCNN_EVAL   = 1000
 ANSATZ           = 'U_TTN'  # 기본값 — 하위 호환 유지
 U_PARAMS         = 2
-RESULTS_DIR_NAME = 'results_ansatz_uttn'
+RESULTS_DIR_NAME = 'results/nsl-kdd/uttn'
 # NSL-KDD 원본은 리포에 포함하지 않음 — README 안내에 따라 data/raw/ 에 직접 다운로드
 TRAIN_PATH  = os.path.join(BASE, 'data', 'raw', 'KDDTrain+.txt')
 TEST_PATH   = os.path.join(BASE, 'data', 'raw', 'KDDTest+.txt')

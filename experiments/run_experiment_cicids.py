@@ -7,7 +7,7 @@ CICIDS-2017 실험 — run_experiment.py(NSL-KDD)와 동일한 프로토콜, 앤
 컬럼 처리 방식은 README와 paper.md Section IV.C 참고).
 
 사용법: python experiments/run_experiment_cicids.py
-        python experiments/run_experiment_cicids.py --ansatz U_15 --u_params 4 --results_dir results_cicids_u15
+        python experiments/run_experiment_cicids.py --ansatz U_15 --u_params 4 --results_dir results/cicids/u15
 """
 
 import argparse, sys, os, json, time
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     parser.add_argument('--steps', type=int, default=STEPS)
     parser.add_argument('--ansatz', type=str, default=ANSATZ)
     parser.add_argument('--u_params', type=int, default=U_PARAMS)
-    parser.add_argument('--results_dir', type=str, default='results_cicids')
+    parser.add_argument('--results_dir', type=str, default='results/cicids/uttn')
     args = parser.parse_args()
 
     run(args.n_sizes, args.n_repeats, args.steps,

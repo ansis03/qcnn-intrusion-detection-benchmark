@@ -89,7 +89,7 @@ def main():
             'SVM': (float(np.mean(svm_f1s)), float(np.std(svm_f1s))),
         }
 
-    out_path = os.path.join(BASE, 'results', 'test_subset_check.json')
+    out_path = os.path.join(BASE, 'results', 'nsl-kdd', 'uttn', 'test_subset_check.json')
     with open(out_path, 'w') as f:
         json.dump(results, f, indent=2)
 

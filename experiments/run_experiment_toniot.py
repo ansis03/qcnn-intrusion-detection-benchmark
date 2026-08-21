@@ -5,7 +5,7 @@ ToN_IoT(Network 서브셋) 실험 — run_experiment.py/run_experiment_cicids.py
 원본 CSV는 용량 문제로 리포에는 포함하지 않음.
 
 사용법: python experiments/run_experiment_toniot.py
-        python experiments/run_experiment_toniot.py --ansatz U_15 --u_params 4 --results_dir results_toniot_u15
+        python experiments/run_experiment_toniot.py --ansatz U_15 --u_params 4 --results_dir results/toniot/u15
 """
 
 import argparse, sys, os, json, time
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     parser.add_argument('--steps', type=int, default=STEPS)
     parser.add_argument('--ansatz', type=str, default=ANSATZ)
     parser.add_argument('--u_params', type=int, default=U_PARAMS)
-    parser.add_argument('--results_dir', type=str, default='results_toniot')
+    parser.add_argument('--results_dir', type=str, default='results/toniot/uttn')
     args = parser.parse_args()
 
     run(args.n_sizes, args.n_repeats, args.steps,

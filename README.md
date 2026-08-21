@@ -21,16 +21,20 @@ experiments/           Entry-point scripts (one per dataset + a CICIDS prep step
 config/config.yaml     Reference listing of experiment settings (not auto-loaded —
                         the scripts below hardcode the same values; kept for
                         documentation / quick lookup)
-results_*/              results_final.json — every metric (F1, accuracy, margins, etc.)
-                        for every run, for every (dataset, ansatz, N) combination
+results/<dataset>/<ansatz>/results_final.json
+                        every metric (F1, accuracy, margins, etc.) for every
+                        run, for every (dataset, ansatz, N) combination
                         reported in the paper
 figures/                Final PDF/PNG figures used in the paper
-gen_figures.py          Regenerates all figures from results_*/
+gen_figures.py          Regenerates all figures from results/
 ```
 
-Naming convention: `results_ansatz_*` = NSL-KDD ansatz sweep, `results_cicids_*`
-/ `results_toniot_*` = the same sweep on the other two datasets, `*_largeN` =
-the N ∈ {10,000, 17,534} extension (U_TTN and U_5 only, all 3 datasets).
+`<dataset>` is one of `nsl-kdd`, `cicids`, `toniot`; `<ansatz>` is one of
+`uttn`, `u15`, `uso4`, `u5`, `usu4` (Table 0's ansätze, lowercased), plus
+`uttn_largeN` / `u5_largeN` for the N ∈ {10,000, 17,534} extension (only
+these two ansätze were re-run at large N, across all 3 datasets) and a couple
+of one-off diagnostic runs (`cicids/sanity`, `toniot/sanity`,
+`cicids/u5_steps1000` — the 5x-training-steps check in Section VI.D).
 
 Note: trained QCNN circuit parameters (`params/*.npy`) and intermediate
 checkpoints (`results_partial.json`) are produced locally when you run an
@@ -68,9 +72,9 @@ python experiments/prepare_cicids.py   # writes data/processed/cicids_clean.pkl
 python experiments/run_experiment.py
 
 # A different ansatz / dataset / results folder
-python experiments/run_experiment.py --ansatz U_15 --u_params 4 --results_dir results_ansatz_u15
-python experiments/run_experiment_cicids.py --ansatz U_5 --u_params 10 --results_dir results_cicids_u5
-python experiments/run_experiment_toniot.py --ansatz U_SU4 --u_params 15 --results_dir results_toniot_usu4
+python experiments/run_experiment.py --ansatz U_15 --u_params 4 --results_dir results/nsl-kdd/u15
+python experiments/run_experiment_cicids.py --ansatz U_5 --u_params 10 --results_dir results/cicids/u5
+python experiments/run_experiment_toniot.py --ansatz U_SU4 --u_params 15 --results_dir results/toniot/usu4
 ```
 
 `--ansatz`/`--u_params` pairs used in the paper: `U_TTN`/2, `U_15`/4,

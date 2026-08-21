@@ -5,14 +5,14 @@ import matplotlib.ticker as ticker
 import warnings
 warnings.filterwarnings('ignore')
 
-# 이 리포는 자기완결적 스냅샷(results_ansatz_uttn/results_final.json, N=5개/25 records)을 쓴다.
+# 이 리포는 자기완결적 스냅샷(results/nsl-kdd/uttn/results_final.json, N=5개/25 records)을 쓴다.
 # Table I·Fig 1과 수치가 반드시 일치해야 하므로 다른 폴더의 결과를 섞어 읽지 않도록 주의.
 SCRIPT_DIR  = os.path.dirname(os.path.abspath(__file__))    # repo root
-RESULTS_DIR = os.path.join(SCRIPT_DIR, 'results_ansatz_uttn')
+RESULTS_DIR = os.path.join(SCRIPT_DIR, 'results/nsl-kdd/uttn')
 FIGURES_DIR = os.path.join(SCRIPT_DIR, 'figures')
 os.makedirs(FIGURES_DIR, exist_ok=True)
 
-SU4_DIR = os.path.join(SCRIPT_DIR, 'results_ansatz_usu4')
+SU4_DIR = os.path.join(SCRIPT_DIR, 'results/nsl-kdd/usu4')
 
 # 결과 로드
 path = os.path.join(RESULTS_DIR, 'results_final.json')
@@ -42,30 +42,30 @@ ANSATZ_STYLE = {
 
 nslkdd_ansatz_data = {
     'U_TTN': data,
-    'U_15':  load_json(os.path.join(SCRIPT_DIR, 'results_ansatz_u15', 'results_final.json')),
-    'U_SO4': load_json(os.path.join(SCRIPT_DIR, 'results_ansatz_uso4', 'results_final.json')),
-    'U_5':   load_json(os.path.join(SCRIPT_DIR, 'results_ansatz_u5', 'results_final.json')),
+    'U_15':  load_json(os.path.join(SCRIPT_DIR, 'results/nsl-kdd/u15', 'results_final.json')),
+    'U_SO4': load_json(os.path.join(SCRIPT_DIR, 'results/nsl-kdd/uso4', 'results_final.json')),
+    'U_5':   load_json(os.path.join(SCRIPT_DIR, 'results/nsl-kdd/u5', 'results_final.json')),
     'U_SU4': su4_data,
 }
 
 toniot_ansatz_data = {
-    'U_TTN': load_json(os.path.join(SCRIPT_DIR, 'results_toniot_uttn', 'results_final.json')),
-    'U_15':  load_json(os.path.join(SCRIPT_DIR, 'results_toniot_u15', 'results_final.json')),
-    'U_SO4': load_json(os.path.join(SCRIPT_DIR, 'results_toniot_uso4', 'results_final.json')),
-    'U_5':   load_json(os.path.join(SCRIPT_DIR, 'results_toniot_u5', 'results_final.json')),
-    'U_SU4': load_json(os.path.join(SCRIPT_DIR, 'results_toniot_usu4', 'results_final.json')),
+    'U_TTN': load_json(os.path.join(SCRIPT_DIR, 'results/toniot/uttn', 'results_final.json')),
+    'U_15':  load_json(os.path.join(SCRIPT_DIR, 'results/toniot/u15', 'results_final.json')),
+    'U_SO4': load_json(os.path.join(SCRIPT_DIR, 'results/toniot/uso4', 'results_final.json')),
+    'U_5':   load_json(os.path.join(SCRIPT_DIR, 'results/toniot/u5', 'results_final.json')),
+    'U_SU4': load_json(os.path.join(SCRIPT_DIR, 'results/toniot/usu4', 'results_final.json')),
 }
 
 cicids_ansatz_data = {
-    'U_TTN': load_json(os.path.join(SCRIPT_DIR, 'results_cicids_uttn', 'results_final.json')),
-    'U_15':  load_json(os.path.join(SCRIPT_DIR, 'results_cicids_u15', 'results_final.json')),
-    'U_SO4': load_json(os.path.join(SCRIPT_DIR, 'results_cicids_uso4', 'results_final.json')),
-    'U_5':   load_json(os.path.join(SCRIPT_DIR, 'results_cicids_u5', 'results_final.json')),
-    'U_SU4': load_json(os.path.join(SCRIPT_DIR, 'results_cicids_usu4', 'results_final.json')),
+    'U_TTN': load_json(os.path.join(SCRIPT_DIR, 'results/cicids/uttn', 'results_final.json')),
+    'U_15':  load_json(os.path.join(SCRIPT_DIR, 'results/cicids/u15', 'results_final.json')),
+    'U_SO4': load_json(os.path.join(SCRIPT_DIR, 'results/cicids/uso4', 'results_final.json')),
+    'U_5':   load_json(os.path.join(SCRIPT_DIR, 'results/cicids/u5', 'results_final.json')),
+    'U_SU4': load_json(os.path.join(SCRIPT_DIR, 'results/cicids/usu4', 'results_final.json')),
 }
 
-largeN_uttn = load_json(os.path.join(SCRIPT_DIR, 'results_uttn_largeN', 'results_final.json'))
-largeN_u5   = load_json(os.path.join(SCRIPT_DIR, 'results_u5_largeN', 'results_final.json'))
+largeN_uttn = load_json(os.path.join(SCRIPT_DIR, 'results/nsl-kdd/uttn_largeN', 'results_final.json'))
+largeN_u5   = load_json(os.path.join(SCRIPT_DIR, 'results/nsl-kdd/u5_largeN', 'results_final.json'))
 
 models = ['QCNN', 'CNN', 'SVM']
 
@@ -332,13 +332,13 @@ largeN_sets = {
     },
     'ToN_IoT': {
         'base_uttn': toniot_ansatz_data['U_TTN'], 'base_u5': toniot_ansatz_data['U_5'],
-        'large_uttn': load_json(os.path.join(SCRIPT_DIR, 'results_toniot_uttn_largeN', 'results_final.json')),
-        'large_u5':   load_json(os.path.join(SCRIPT_DIR, 'results_toniot_u5_largeN', 'results_final.json')),
+        'large_uttn': load_json(os.path.join(SCRIPT_DIR, 'results/toniot/uttn_largeN', 'results_final.json')),
+        'large_u5':   load_json(os.path.join(SCRIPT_DIR, 'results/toniot/u5_largeN', 'results_final.json')),
     },
     'CICIDS-2017': {
         'base_uttn': cicids_ansatz_data['U_TTN'], 'base_u5': cicids_ansatz_data['U_5'],
-        'large_uttn': load_json(os.path.join(SCRIPT_DIR, 'results_cicids_uttn_largeN', 'results_final.json')),
-        'large_u5':   load_json(os.path.join(SCRIPT_DIR, 'results_cicids_u5_largeN', 'results_final.json')),
+        'large_uttn': load_json(os.path.join(SCRIPT_DIR, 'results/cicids/uttn_largeN', 'results_final.json')),
+        'large_u5':   load_json(os.path.join(SCRIPT_DIR, 'results/cicids/u5_largeN', 'results_final.json')),
     },
 }
 
