@@ -33,9 +33,14 @@ gen_figures.py          Regenerates all figures from results/
 `<dataset>` is one of `nsl-kdd`, `cicids`, `toniot`; `<ansatz>` is one of
 `uttn`, `u15`, `uso4`, `u5`, `usu4` (Table 0's ansätze, lowercased), plus
 `uttn_largeN` / `u5_largeN` for the N ∈ {10,000, 17,534} extension (only
-these two ansätze were re-run at large N, across all 3 datasets) and a couple
-of one-off diagnostic runs (`cicids/sanity`, `toniot/sanity`,
-`cicids/u5_steps1000` — the 5x-training-steps check in Section VI.D).
+these two ansätze were re-run at large N, across all 3 datasets) and two
+one-off diagnostic folders, each with just 1 record instead of 25:
+- `cicids/sanity`, `toniot/sanity` — a single U_TTN run at N=5,000, done
+  before committing to the full 5-ansatz × 5-N × 5-rep sweep on each newly
+  added dataset, just to check QCNN/CNN/SVM all reach a sane F1 first
+- `cicids/u5_steps1000` — U_5 re-run with 5x the training steps (1,000 vs.
+  200), the targeted check in paper Section VI.D for whether CICIDS-2017's
+  underfitting is just undertraining (it isn't — see the paper)
 
 Note: trained QCNN circuit parameters (`params/*.npy`) and intermediate
 checkpoints (`results_partial.json`) are produced locally when you run an
