@@ -133,10 +133,9 @@ ax.legend(loc='lower right')
 ax.set_ylim(0, 1.02)
 ax.grid(True, which='major', linestyle='--', alpha=0.4)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig1_f1.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig1_f1.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig1_f1.pdf / .png (음영 버전, 원본 유지)')
+print('Saved: fig1_f1.png (음영 버전, 원본 유지)')
 
 # --- (B) 대안: 점선 오차막대 버전. 지터 없이 정확한 N에 표시. 교수님 확인용 별도 파일. ---
 fig, ax = plt.subplots(figsize=(4.5, 3.2))
@@ -157,10 +156,9 @@ ax.legend(loc='lower right')
 ax.set_ylim(0, 1.02)
 ax.grid(True, which='major', linestyle='--', alpha=0.4)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig1_f1_errorbar.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig1_f1_errorbar.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig1_f1_errorbar.pdf / .png (점선 오차막대 버전, 신규 — 컨펌용)')
+print('Saved: fig1_f1_errorbar.png (점선 오차막대 버전, 신규 — 컨펌용)')
 
 # ============================================================
 # Figure 2 — Generalization Gap vs N
@@ -196,10 +194,9 @@ ax.set_title('QCNN Generalization Gap vs. Training Size')
 ax.legend(loc='upper right')
 ax.grid(True, which='major', linestyle='--', alpha=0.4)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig2_gen_gap.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig2_gen_gap.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig2_gen_gap.pdf / .png (음영 버전, U_TTN+U_SU4 갱신)')
+print('Saved: fig2_gen_gap.png (음영 버전, U_TTN+U_SU4 갱신)')
 
 # --- (B) 대안: 점선 오차막대 버전 ---
 fig, ax = plt.subplots(figsize=(4.5, 3.2))
@@ -215,10 +212,9 @@ ax.set_title('QCNN Generalization Gap vs. Training Size')
 ax.legend(loc='upper right')
 ax.grid(True, which='major', linestyle='--', alpha=0.4)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig2_gen_gap_errorbar.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig2_gen_gap_errorbar.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig2_gen_gap_errorbar.pdf / .png (점선 오차막대 버전, U_TTN+U_SU4 갱신)')
+print('Saved: fig2_gen_gap_errorbar.png (점선 오차막대 버전, U_TTN+U_SU4 갱신)')
 
 # ============================================================
 # Figure 3 — Ansatz comparison: full five-ansatz sweep (NSL-KDD)
@@ -258,10 +254,9 @@ ax2.set_title('(b) Run-to-Run Variance'); ax2.legend(loc='upper right', fontsize
 ax2.set_ylim(0, None); ax2.grid(True, which='major', linestyle='--', alpha=0.4)
 
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig3_ansatz_comparison.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig3_ansatz_comparison.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig3_ansatz_comparison.pdf / .png (5-앤자츠 전체 스윕으로 확장, 2026-08)')
+print('Saved: fig3_ansatz_comparison.png (5-앤자츠 전체 스윕으로 확장, 2026-08)')
 
 # ============================================================
 # Figure 4 — Cross-dataset comparison (NSL-KDD, ToN_IoT, CICIDS-2017)
@@ -297,10 +292,9 @@ axes[0].set_ylabel('Test F1')
 axes[0].legend(loc='lower right', fontsize=6.5)
 fig.suptitle('Cross-Dataset QCNN–Classical Gap (N ≤ 5,000)', y=1.03)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig4_cross_dataset.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig4_cross_dataset.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig4_cross_dataset.pdf / .png (신규, 2026-08)')
+print('Saved: fig4_cross_dataset.png (신규, 2026-08)')
 
 # ============================================================
 # Figure 5 — Large-N extension, ALL THREE datasets (U_TTN & U_5 vs classical, N up to 17,534)
@@ -372,9 +366,8 @@ handles, labels = axes[0].get_legend_handles_labels()
 fig.legend(handles, labels, loc='lower center', ncol=4, fontsize=7.5, bbox_to_anchor=(0.5, -0.06), frameon=False)
 fig.suptitle('Large-$N$ Extension: Gap-Closing Is Dataset-Dependent', y=1.04)
 plt.tight_layout()
-plt.savefig(os.path.join(FIGURES_DIR, 'fig5_largeN.pdf'), dpi=300, bbox_inches='tight')
 plt.savefig(os.path.join(FIGURES_DIR, 'fig5_largeN.png'), dpi=300, bbox_inches='tight')
 plt.close()
-print('Saved: fig5_largeN.pdf / .png (3데이터셋 패널로 재구성, 2026-08-11)')
+print('Saved: fig5_largeN.png (3데이터셋 패널로 재구성, 2026-08-11)')
 
 print('Done.')

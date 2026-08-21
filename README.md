@@ -26,7 +26,9 @@ results/<dataset>/<ansatz>/results_final.json
                         run, for every (dataset, ansatz, N) combination
                         reported in the paper — field-by-field meaning in
                         results/README.md
-figures/                Final PDF/PNG figures used in the paper
+figures/                PNG versions of the paper's figures (vector PDFs used in
+                        the actual submission live in the paper's own repo,
+                        not here)
 gen_figures.py          Regenerates all figures from results/
 ```
 
