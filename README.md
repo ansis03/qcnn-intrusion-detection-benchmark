@@ -120,13 +120,6 @@ The 1,024-shot check resamples the released scores inside `analysis/checks.py`.
   benign records. The threshold is the 1,485th of 1,500 benign scores, which gives
   a 1% FPR. The FPR is measured on the other 1,500 benign records.
 
-## Earlier version
-
-An earlier draft, *Ansatz Expressivity and Dataset-Dependent Scaling of QCNN
-Competitiveness in Network Intrusion Detection*, studied stratified subsets only and
-compared QCNNs with classical models. Its code and results are kept under the git tag
-[`v1-ansatz-scaling`](../../tree/v1-ansatz-scaling).
-
 ## License
 
 Code: MIT (see `LICENSE`). `QCNN/` is Apache 2.0 (see `QCNN/LICENSE.md`).
