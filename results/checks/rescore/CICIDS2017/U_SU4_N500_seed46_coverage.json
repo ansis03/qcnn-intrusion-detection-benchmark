@@ -1,0 +1,26 @@
+{
+ "key": "U_SU4_N500_seed46_coverage",
+ "dataset": "CICIDS2017",
+ "N": 500,
+ "seed": 46,
+ "circuit": "U_SU4",
+ "method": "coverage",
+ "n_cal": 10000,
+ "n_test_benign": 10000,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.05821428571428571,
+  "recall_weighted": 0.2469264268580823,
+  "fpr": 0.0013
+ },
+ "test0.01": {
+  "recall_macro": 0.17375000000000002,
+  "recall_weighted": 0.35552609355768966,
+  "fpr": 0.0101
+ },
+ "train0.01": {
+  "recall_macro": 0.17339285714285715,
+  "recall_weighted": 0.35436830142573505,
+  "fpr": 0.00975
+ }
+}

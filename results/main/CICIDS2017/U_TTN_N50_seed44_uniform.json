@@ -1,0 +1,130 @@
+{
+ "key": "U_TTN_N50_seed44_uniform",
+ "dataset": "CICIDS2017",
+ "N": 50,
+ "seed": 44,
+ "circuit": "U_TTN",
+ "method": "uniform",
+ "attack_records": 25,
+ "selected_types": 14,
+ "auc_macro": 0.6858014927923797,
+ "auc_weighted": 0.6681117043688405,
+ "recall_macro": 0.01767857142857143,
+ "recall_weighted": 0.0024562487085732767,
+ "fpr": 0.012666666666666666,
+ "threshold": 0.24281534995576814,
+ "per_type": [
+  {
+   "type": "Bot",
+   "auc": 0.6412815945716709,
+   "recall": 0.0,
+   "test_count": 393,
+   "evaluated_count": 393,
+   "subset_count": 2
+  },
+  {
+   "type": "DDoS",
+   "auc": 0.7028941666666667,
+   "recall": 0.0,
+   "test_count": 25775,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "DoS GoldenEye",
+   "auc": 0.8343591666666667,
+   "recall": 0.005,
+   "test_count": 2058,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "DoS Hulk",
+   "auc": 0.6687208333333333,
+   "recall": 0.0,
+   "test_count": 45887,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "DoS Slowhttptest",
+   "auc": 0.8345341666666666,
+   "recall": 0.1975,
+   "test_count": 1075,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "DoS slowloris",
+   "auc": 0.7956525,
+   "recall": 0.045,
+   "test_count": 1129,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "FTP-Patator",
+   "auc": 0.585885,
+   "recall": 0.0,
+   "test_count": 1591,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "Heartbleed",
+   "auc": 0.7188333333333334,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 1
+  },
+  {
+   "type": "Infiltration",
+   "auc": 0.6175,
+   "recall": 0.0,
+   "test_count": 6,
+   "evaluated_count": 6,
+   "subset_count": 1
+  },
+  {
+   "type": "PortScan",
+   "auc": 0.6255783333333335,
+   "recall": 0.0,
+   "test_count": 31757,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "SSH-Patator",
+   "auc": 0.5891066666666668,
+   "recall": 0.0,
+   "test_count": 1200,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "Web Attack \u2013 Brute Force",
+   "auc": 0.6590202991452991,
+   "recall": 0.0,
+   "test_count": 312,
+   "evaluated_count": 312,
+   "subset_count": 2
+  },
+  {
+   "type": "Web Attack \u2013 Sql Injection",
+   "auc": 0.6559999999999999,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 1
+  },
+  {
+   "type": "Web Attack \u2013 XSS",
+   "auc": 0.6718548387096774,
+   "recall": 0.0,
+   "test_count": 124,
+   "evaluated_count": 124,
+   "subset_count": 2
+  }
+ ]
+}

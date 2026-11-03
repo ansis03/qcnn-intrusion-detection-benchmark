@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N5000_seed45_uniform",
+ "dataset": "NSL-KDD",
+ "N": 5000,
+ "seed": 45,
+ "circuit": "U_TTN",
+ "method": "uniform",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.041466105550500454,
+  "recall_weighted": 0.045894528239568425,
+  "fpr": 0.0012355848434925864
+ },
+ "test0.01": {
+  "recall_macro": 0.2410617571953606,
+  "recall_weighted": 0.4450999119233734,
+  "fpr": 0.00885502471169687
+ },
+ "train0.01": {
+  "recall_macro": 0.2566612301381373,
+  "recall_weighted": 0.4829984586590334,
+  "fpr": 0.015034496962207806
+ }
+}

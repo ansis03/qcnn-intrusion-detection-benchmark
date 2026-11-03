@@ -1,0 +1,26 @@
+{
+ "key": "U_SU4_N5000_seed43_uniform",
+ "dataset": "CICIDS2017",
+ "N": 5000,
+ "seed": 43,
+ "circuit": "U_SU4",
+ "method": "uniform",
+ "n_cal": 10000,
+ "n_test_benign": 10000,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.009285714285714286,
+  "recall_weighted": 0.0013185579143121526,
+  "fpr": 0.0005
+ },
+ "test0.01": {
+  "recall_macro": 0.10410714285714286,
+  "recall_weighted": 0.2740036474382585,
+  "fpr": 0.0087
+ },
+ "train0.01": {
+  "recall_macro": 0.10464285714285713,
+  "recall_weighted": 0.2766437503930429,
+  "fpr": 0.0108
+ }
+}

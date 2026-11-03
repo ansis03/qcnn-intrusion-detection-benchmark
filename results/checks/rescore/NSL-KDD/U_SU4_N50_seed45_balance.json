@@ -1,0 +1,26 @@
+{
+ "key": "U_SU4_N50_seed45_balance",
+ "dataset": "NSL-KDD",
+ "N": 50,
+ "seed": 45,
+ "circuit": "U_SU4",
+ "method": "balance",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.12585418562329392,
+  "recall_weighted": 0.37380105691952004,
+  "fpr": 0.00041186161449752884
+ },
+ "test0.01": {
+  "recall_macro": 0.2848686305732484,
+  "recall_weighted": 0.6753085434327866,
+  "fpr": 0.007619439868204283
+ },
+ "train0.01": {
+  "recall_macro": 0.2922609134690073,
+  "recall_weighted": 0.6820890674887153,
+  "fpr": 0.014622592935845948
+ }
+}

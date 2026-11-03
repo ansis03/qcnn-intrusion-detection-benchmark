@@ -1,0 +1,178 @@
+{
+ "key": "U_SU4_N5000_seed46_stratified",
+ "dataset": "NSL-KDD",
+ "N": 5000,
+ "seed": 46,
+ "circuit": "U_SU4",
+ "method": "stratified",
+ "attack_records": 2327,
+ "selected_types": 15,
+ "auc_macro": 0.785506312538611,
+ "auc_weighted": 0.8095802336783001,
+ "recall_macro": 0.26590004856123234,
+ "recall_weighted": 0.6707362655510294,
+ "fpr": 0.007333333333333333,
+ "threshold": 0.18872745711034616,
+ "per_type": [
+  {
+   "type": "back",
+   "auc": 0.5796685236768803,
+   "recall": 0.0,
+   "test_count": 359,
+   "evaluated_count": 359,
+   "subset_count": 42
+  },
+  {
+   "type": "buffer_overflow",
+   "auc": 0.6002333333333333,
+   "recall": 0.0,
+   "test_count": 20,
+   "evaluated_count": 20,
+   "subset_count": 1
+  },
+  {
+   "type": "ftp_write",
+   "auc": 0.7963333333333333,
+   "recall": 0.0,
+   "test_count": 3,
+   "evaluated_count": 3,
+   "subset_count": 1
+  },
+  {
+   "type": "guess_passwd",
+   "auc": 0.18370833333333333,
+   "recall": 0.0,
+   "test_count": 1231,
+   "evaluated_count": 400,
+   "subset_count": 2
+  },
+  {
+   "type": "imap",
+   "auc": 0.9406666666666667,
+   "recall": 0.0,
+   "test_count": 1,
+   "evaluated_count": 1,
+   "subset_count": 0
+  },
+  {
+   "type": "ipsweep",
+   "auc": 0.9883309692671395,
+   "recall": 0.09929078014184398,
+   "test_count": 141,
+   "evaluated_count": 141,
+   "subset_count": 137
+  },
+  {
+   "type": "land",
+   "auc": 0.9995238095238095,
+   "recall": 1.0,
+   "test_count": 7,
+   "evaluated_count": 7,
+   "subset_count": 0
+  },
+  {
+   "type": "loadmodule",
+   "auc": 0.8025,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 0
+  },
+  {
+   "type": "multihop",
+   "auc": 0.7191851851851851,
+   "recall": 0.0,
+   "test_count": 18,
+   "evaluated_count": 18,
+   "subset_count": 0
+  },
+  {
+   "type": "neptune",
+   "auc": 0.9990583333333333,
+   "recall": 0.9925,
+   "test_count": 4657,
+   "evaluated_count": 400,
+   "subset_count": 1657
+  },
+  {
+   "type": "nmap",
+   "auc": 0.9996712328767123,
+   "recall": 1.0,
+   "test_count": 73,
+   "evaluated_count": 73,
+   "subset_count": 54
+  },
+  {
+   "type": "perl",
+   "auc": 0.42466666666666664,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 1
+  },
+  {
+   "type": "phf",
+   "auc": 0.834,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 1
+  },
+  {
+   "type": "pod",
+   "auc": 0.9671056910569106,
+   "recall": 0.0,
+   "test_count": 41,
+   "evaluated_count": 41,
+   "subset_count": 7
+  },
+  {
+   "type": "portsweep",
+   "auc": 0.9743290870488323,
+   "recall": 0.33121019108280253,
+   "test_count": 157,
+   "evaluated_count": 157,
+   "subset_count": 119
+  },
+  {
+   "type": "rootkit",
+   "auc": 0.5603589743589744,
+   "recall": 0.0,
+   "test_count": 13,
+   "evaluated_count": 13,
+   "subset_count": 0
+  },
+  {
+   "type": "satan",
+   "auc": 0.9957158333333334,
+   "recall": 0.915,
+   "test_count": 735,
+   "evaluated_count": 400,
+   "subset_count": 142
+  },
+  {
+   "type": "smurf",
+   "auc": 0.998455,
+   "recall": 0.98,
+   "test_count": 665,
+   "evaluated_count": 400,
+   "subset_count": 97
+  },
+  {
+   "type": "teardrop",
+   "auc": 0.9142777777777777,
+   "recall": 0.0,
+   "test_count": 12,
+   "evaluated_count": 12,
+   "subset_count": 31
+  },
+  {
+   "type": "warezmaster",
+   "auc": 0.4323375,
+   "recall": 0.0,
+   "test_count": 944,
+   "evaluated_count": 400,
+   "subset_count": 0
+  }
+ ]
+}

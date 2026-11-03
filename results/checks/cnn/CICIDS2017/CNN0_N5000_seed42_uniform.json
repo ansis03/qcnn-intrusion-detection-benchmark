@@ -1,0 +1,100 @@
+{
+ "key": "CNN0_N5000_seed42_uniform",
+ "dataset": "CICIDS2017",
+ "N": 5000,
+ "seed": 42,
+ "circuit": "CNN0",
+ "method": "uniform",
+ "auc_macro": 0.9334638146268487,
+ "auc_weighted": 0.9492559393650822,
+ "recall_macro": 0.3321184175752016,
+ "recall_weighted": 0.449224649854911,
+ "fpr": 0.004666666666666667,
+ "threshold": 2.3396646976470947,
+ "per_type": [
+  {
+   "type": "Bot",
+   "auc": 0.8621518235793045,
+   "recall": 0.002544529262086514,
+   "subset_count": 222
+  },
+  {
+   "type": "DDoS",
+   "auc": 0.9769308333333333,
+   "recall": 0.6525,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS GoldenEye",
+   "auc": 0.9386516666666667,
+   "recall": 0.64,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Hulk",
+   "auc": 0.932965,
+   "recall": 0.6625,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Slowhttptest",
+   "auc": 0.9891633333333333,
+   "recall": 0.8025,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS slowloris",
+   "auc": 0.9749691666666666,
+   "recall": 0.28,
+   "subset_count": 222
+  },
+  {
+   "type": "FTP-Patator",
+   "auc": 0.9606983333333333,
+   "recall": 0.0,
+   "subset_count": 222
+  },
+  {
+   "type": "Heartbleed",
+   "auc": 0.9941666666666666,
+   "recall": 0.5,
+   "subset_count": 9
+  },
+  {
+   "type": "Infiltration",
+   "auc": 0.8284999999999999,
+   "recall": 0.16666666666666666,
+   "subset_count": 30
+  },
+  {
+   "type": "PortScan",
+   "auc": 0.9503783333333333,
+   "recall": 0.0025,
+   "subset_count": 222
+  },
+  {
+   "type": "SSH-Patator",
+   "auc": 0.911805,
+   "recall": 0.0,
+   "subset_count": 222
+  },
+  {
+   "type": "Web Attack \u2013 Brute Force",
+   "auc": 0.9712799145299145,
+   "recall": 0.4807692307692308,
+   "subset_count": 222
+  },
+  {
+   "type": "Web Attack \u2013 Sql Injection",
+   "auc": 0.7993333333333332,
+   "recall": 0.0,
+   "subset_count": 19
+  },
+  {
+   "type": "Web Attack \u2013 XSS",
+   "auc": 0.9774999999999999,
+   "recall": 0.4596774193548387,
+   "subset_count": 222
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "records": 2262300,
+ "attacks": 445245,
+ "benign": 1817055,
+ "attack_types": {
+  "DoS Hulk": 184237,
+  "PortScan": 127047,
+  "DDoS": 102250,
+  "DoS GoldenEye": 8235,
+  "FTP-Patator": 6344,
+  "SSH-Patator": 4697,
+  "DoS slowloris": 4667,
+  "DoS Slowhttptest": 4424,
+  "Bot": 1563,
+  "Web Attack \u2013 Brute Force": 1195,
+  "Web Attack \u2013 XSS": 528,
+  "Infiltration": 30,
+  "Web Attack \u2013 Sql Injection": 19,
+  "Heartbleed": 9
+ }
+}

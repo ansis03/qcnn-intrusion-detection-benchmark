@@ -1,0 +1,130 @@
+{
+ "key": "U_SU4_N1000_seed45_balance",
+ "dataset": "CICIDS2017",
+ "N": 1000,
+ "seed": 45,
+ "circuit": "U_SU4",
+ "method": "balance",
+ "attack_records": 500,
+ "selected_types": 10,
+ "auc_macro": 0.6882505432786453,
+ "auc_weighted": 0.8251876868788052,
+ "recall_macro": 0.06321428571428571,
+ "recall_weighted": 0.20140406159319382,
+ "fpr": 0.007333333333333333,
+ "threshold": 0.24629237880567323,
+ "per_type": [
+  {
+   "type": "Bot",
+   "auc": 0.6652010178117047,
+   "recall": 0.0,
+   "test_count": 393,
+   "evaluated_count": 393,
+   "subset_count": 2
+  },
+  {
+   "type": "DDoS",
+   "auc": 0.8216533333333333,
+   "recall": 0.1625,
+   "test_count": 25775,
+   "evaluated_count": 400,
+   "subset_count": 100
+  },
+  {
+   "type": "DoS GoldenEye",
+   "auc": 0.918045,
+   "recall": 0.0875,
+   "test_count": 2058,
+   "evaluated_count": 400,
+   "subset_count": 14
+  },
+  {
+   "type": "DoS Hulk",
+   "auc": 0.8487991666666667,
+   "recall": 0.3875,
+   "test_count": 45887,
+   "evaluated_count": 400,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Slowhttptest",
+   "auc": 0.7500450000000001,
+   "recall": 0.1975,
+   "test_count": 1075,
+   "evaluated_count": 400,
+   "subset_count": 9
+  },
+  {
+   "type": "DoS slowloris",
+   "auc": 0.7460583333333333,
+   "recall": 0.05,
+   "test_count": 1129,
+   "evaluated_count": 400,
+   "subset_count": 4
+  },
+  {
+   "type": "FTP-Patator",
+   "auc": 0.40938583333333334,
+   "recall": 0.0,
+   "test_count": 1591,
+   "evaluated_count": 400,
+   "subset_count": 5
+  },
+  {
+   "type": "Heartbleed",
+   "auc": 0.754,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 0
+  },
+  {
+   "type": "Infiltration",
+   "auc": 0.33844444444444444,
+   "recall": 0.0,
+   "test_count": 6,
+   "evaluated_count": 6,
+   "subset_count": 0
+  },
+  {
+   "type": "PortScan",
+   "auc": 0.8319058333333333,
+   "recall": 0.0,
+   "test_count": 31757,
+   "evaluated_count": 400,
+   "subset_count": 138
+  },
+  {
+   "type": "SSH-Patator",
+   "auc": 0.41629249999999995,
+   "recall": 0.0,
+   "test_count": 1200,
+   "evaluated_count": 400,
+   "subset_count": 5
+  },
+  {
+   "type": "Web Attack \u2013 Brute Force",
+   "auc": 0.7837094017094017,
+   "recall": 0.0,
+   "test_count": 312,
+   "evaluated_count": 312,
+   "subset_count": 1
+  },
+  {
+   "type": "Web Attack \u2013 Sql Injection",
+   "auc": 0.48583333333333334,
+   "recall": 0.0,
+   "test_count": 2,
+   "evaluated_count": 2,
+   "subset_count": 0
+  },
+  {
+   "type": "Web Attack \u2013 XSS",
+   "auc": 0.8661344086021505,
+   "recall": 0.0,
+   "test_count": 124,
+   "evaluated_count": 124,
+   "subset_count": 0
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N100_seed42_coverage",
+ "dataset": "NSL-KDD",
+ "N": 100,
+ "seed": 42,
+ "circuit": "U_TTN",
+ "method": "coverage",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.023875,
+  "recall_weighted": 0.045116426290873056,
+  "fpr": 0.0
+ },
+ "test0.01": {
+  "recall_macro": 0.2831480496453901,
+  "recall_weighted": 0.5913390399647693,
+  "fpr": 0.009060955518945634
+ },
+ "train0.01": {
+  "recall_macro": 0.27975,
+  "recall_weighted": 0.5881586480237807,
+  "fpr": 0.008444032540418082
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N500_seed45_balance",
+ "dataset": "CICIDS2017",
+ "N": 500,
+ "seed": 45,
+ "circuit": "U_TTN",
+ "method": "balance",
+ "n_cal": 10000,
+ "n_test_benign": 10000,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.0066071428571428574,
+  "recall_weighted": 0.0354220831723729,
+  "fpr": 0.0007
+ },
+ "test0.01": {
+  "recall_macro": 0.02214285714285714,
+  "recall_weighted": 0.12327775332177411,
+  "fpr": 0.0089
+ },
+ "train0.01": {
+  "recall_macro": 0.02553571428571429,
+  "recall_weighted": 0.142859218765441,
+  "fpr": 0.012
+ }
+}

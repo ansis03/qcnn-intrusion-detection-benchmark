@@ -1,0 +1,26 @@
+{
+ "key": "U_SU4_N5000_seed45_coverage",
+ "dataset": "NSL-KDD",
+ "N": 5000,
+ "seed": 45,
+ "circuit": "U_SU4",
+ "method": "coverage",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.16424112829845314,
+  "recall_weighted": 0.4699515578553341,
+  "fpr": 0.00041186161449752884
+ },
+ "test0.01": {
+  "recall_macro": 0.28343956798407255,
+  "recall_weighted": 0.6696331058020479,
+  "fpr": 0.007413509060955519
+ },
+ "train0.01": {
+  "recall_macro": 0.28158495805499456,
+  "recall_weighted": 0.667095397996257,
+  "fpr": 0.008032128514056224
+ }
+}

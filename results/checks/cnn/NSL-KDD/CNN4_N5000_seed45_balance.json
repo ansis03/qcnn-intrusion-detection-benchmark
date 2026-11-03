@@ -1,0 +1,136 @@
+{
+ "key": "CNN4_N5000_seed45_balance",
+ "dataset": "NSL-KDD",
+ "N": 5000,
+ "seed": 45,
+ "circuit": "CNN4",
+ "method": "balance",
+ "auc_macro": 0.8731614986967495,
+ "auc_weighted": 0.9403320342948368,
+ "recall_macro": 0.1938270018198362,
+ "recall_weighted": 0.43417951117472203,
+ "fpr": 0.008,
+ "threshold": 9.069353103637695,
+ "per_type": [
+  {
+   "type": "back",
+   "auc": 0.8123514391829154,
+   "recall": 0.0,
+   "subset_count": 39
+  },
+  {
+   "type": "buffer_overflow",
+   "auc": 0.9251333333333334,
+   "recall": 0.0,
+   "subset_count": 3
+  },
+  {
+   "type": "ftp_write",
+   "auc": 0.7047777777777777,
+   "recall": 0.0,
+   "subset_count": 1
+  },
+  {
+   "type": "guess_passwd",
+   "auc": 0.7384433333333333,
+   "recall": 0.0,
+   "subset_count": 5
+  },
+  {
+   "type": "imap",
+   "auc": 0.976,
+   "recall": 0.0,
+   "subset_count": 1
+  },
+  {
+   "type": "ipsweep",
+   "auc": 0.982098108747045,
+   "recall": 0.0,
+   "subset_count": 173
+  },
+  {
+   "type": "land",
+   "auc": 0.988047619047619,
+   "recall": 0.5714285714285714,
+   "subset_count": 0
+  },
+  {
+   "type": "loadmodule",
+   "auc": 0.6105,
+   "recall": 0.0,
+   "subset_count": 1
+  },
+  {
+   "type": "multihop",
+   "auc": 0.7857222222222222,
+   "recall": 0.0,
+   "subset_count": 1
+  },
+  {
+   "type": "neptune",
+   "auc": 0.9941566666666667,
+   "recall": 0.6825,
+   "subset_count": 1736
+  },
+  {
+   "type": "nmap",
+   "auc": 0.998689497716895,
+   "recall": 1.0,
+   "subset_count": 70
+  },
+  {
+   "type": "perl",
+   "auc": 0.9216666666666666,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "phf",
+   "auc": 0.5103333333333333,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "pod",
+   "auc": 0.9719024390243902,
+   "recall": 0.0,
+   "subset_count": 1
+  },
+  {
+   "type": "portsweep",
+   "auc": 0.997004246284501,
+   "recall": 0.8726114649681529,
+   "subset_count": 116
+  },
+  {
+   "type": "rootkit",
+   "auc": 0.6874871794871795,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "satan",
+   "auc": 0.9917275000000001,
+   "recall": 0.75,
+   "subset_count": 165
+  },
+  {
+   "type": "smurf",
+   "auc": 0.9837216666666666,
+   "recall": 0.0,
+   "subset_count": 105
+  },
+  {
+   "type": "teardrop",
+   "auc": 0.9806111111111111,
+   "recall": 0.0,
+   "subset_count": 41
+  },
+  {
+   "type": "warezmaster",
+   "auc": 0.9028558333333334,
+   "recall": 0.0,
+   "subset_count": 3
+  }
+ ]
+}

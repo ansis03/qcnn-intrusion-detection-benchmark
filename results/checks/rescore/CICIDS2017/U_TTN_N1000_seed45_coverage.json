@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N1000_seed45_coverage",
+ "dataset": "CICIDS2017",
+ "N": 1000,
+ "seed": 45,
+ "circuit": "U_TTN",
+ "method": "coverage",
+ "n_cal": 10000,
+ "n_test_benign": 10000,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.015535714285714286,
+  "recall_weighted": 0.08966249966310608,
+  "fpr": 0.0006
+ },
+ "test0.01": {
+  "recall_macro": 0.018035714285714287,
+  "recall_weighted": 0.10363924050632911,
+  "fpr": 0.0081
+ },
+ "train0.01": {
+  "recall_macro": 0.02125,
+  "recall_weighted": 0.11736753330757968,
+  "fpr": 0.0124
+ }
+}

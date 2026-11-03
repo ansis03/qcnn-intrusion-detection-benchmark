@@ -1,0 +1,100 @@
+{
+ "key": "CNN0_N5000_seed46_uniform",
+ "dataset": "CICIDS2017",
+ "N": 5000,
+ "seed": 46,
+ "circuit": "CNN0",
+ "method": "uniform",
+ "auc_macro": 0.925788039604517,
+ "auc_weighted": 0.9494555465467626,
+ "recall_macro": 0.29002699108738256,
+ "recall_weighted": 0.5185915587857445,
+ "fpr": 0.009333333333333334,
+ "threshold": 2.5701661109924316,
+ "per_type": [
+  {
+   "type": "Bot",
+   "auc": 0.9013460559796438,
+   "recall": 0.017811704834605598,
+   "subset_count": 222
+  },
+  {
+   "type": "DDoS",
+   "auc": 0.9726558333333333,
+   "recall": 0.6525,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS GoldenEye",
+   "auc": 0.945555,
+   "recall": 0.7175,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Hulk",
+   "auc": 0.9318191666666666,
+   "recall": 0.655,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Slowhttptest",
+   "auc": 0.9893483333333333,
+   "recall": 0.805,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS slowloris",
+   "auc": 0.9761766666666667,
+   "recall": 0.3275,
+   "subset_count": 222
+  },
+  {
+   "type": "FTP-Patator",
+   "auc": 0.9613883333333334,
+   "recall": 0.0,
+   "subset_count": 222
+  },
+  {
+   "type": "Heartbleed",
+   "auc": 0.9873333333333333,
+   "recall": 0.5,
+   "subset_count": 9
+  },
+  {
+   "type": "Infiltration",
+   "auc": 0.6367222222222222,
+   "recall": 0.0,
+   "subset_count": 30
+  },
+  {
+   "type": "PortScan",
+   "auc": 0.9546466666666666,
+   "recall": 0.255,
+   "subset_count": 222
+  },
+  {
+   "type": "SSH-Patator",
+   "auc": 0.9271250000000001,
+   "recall": 0.0,
+   "subset_count": 222
+  },
+  {
+   "type": "Web Attack \u2013 Brute Force",
+   "auc": 0.9721121794871795,
+   "recall": 0.08974358974358974,
+   "subset_count": 222
+  },
+  {
+   "type": "Web Attack \u2013 Sql Injection",
+   "auc": 0.8303333333333334,
+   "recall": 0.0,
+   "subset_count": 19
+  },
+  {
+   "type": "Web Attack \u2013 XSS",
+   "auc": 0.974470430107527,
+   "recall": 0.04032258064516129,
+   "subset_count": 222
+  }
+ ]
+}

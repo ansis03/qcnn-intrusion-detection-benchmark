@@ -1,0 +1,100 @@
+{
+ "key": "CNN3_N100_seed46_balance",
+ "dataset": "CICIDS2017",
+ "N": 100,
+ "seed": 46,
+ "circuit": "CNN3",
+ "method": "balance",
+ "auc_macro": 0.7122955578994284,
+ "auc_weighted": 0.8364125964677046,
+ "recall_macro": 0.24571428571428572,
+ "recall_weighted": 0.4768622597946295,
+ "fpr": 0.013333333333333334,
+ "threshold": 0.3225672245025635,
+ "per_type": [
+  {
+   "type": "Bot",
+   "auc": 0.5895335029686175,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "DDoS",
+   "auc": 0.9923875,
+   "recall": 0.8075,
+   "subset_count": 13
+  },
+  {
+   "type": "DoS GoldenEye",
+   "auc": 0.9573349999999999,
+   "recall": 0.72,
+   "subset_count": 1
+  },
+  {
+   "type": "DoS Hulk",
+   "auc": 0.9643891666666666,
+   "recall": 0.665,
+   "subset_count": 25
+  },
+  {
+   "type": "DoS Slowhttptest",
+   "auc": 0.7249258333333334,
+   "recall": 0.21,
+   "subset_count": 0
+  },
+  {
+   "type": "DoS slowloris",
+   "auc": 0.6372866666666666,
+   "recall": 0.0375,
+   "subset_count": 1
+  },
+  {
+   "type": "FTP-Patator",
+   "auc": 0.3019204166666667,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "Heartbleed",
+   "auc": 0.9944999999999999,
+   "recall": 1.0,
+   "subset_count": 0
+  },
+  {
+   "type": "Infiltration",
+   "auc": 0.4641111111111111,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "PortScan",
+   "auc": 0.5664583333333333,
+   "recall": 0.0,
+   "subset_count": 9
+  },
+  {
+   "type": "SSH-Patator",
+   "auc": 0.6680266666666668,
+   "recall": 0.0,
+   "subset_count": 1
+  },
+  {
+   "type": "Web Attack \u2013 Brute Force",
+   "auc": 0.6691399572649572,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "Web Attack \u2013 Sql Injection",
+   "auc": 0.7691666666666667,
+   "recall": 0.0,
+   "subset_count": 0
+  },
+  {
+   "type": "Web Attack \u2013 XSS",
+   "auc": 0.672956989247312,
+   "recall": 0.0,
+   "subset_count": 0
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N500_seed42_uniform",
+ "dataset": "CICIDS2017",
+ "N": 500,
+ "seed": 42,
+ "circuit": "U_TTN",
+ "method": "uniform",
+ "n_cal": 10000,
+ "n_test_benign": 10000,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.012678571428571428,
+  "recall_weighted": 0.04800507137659351,
+  "fpr": 0.0009
+ },
+ "test0.01": {
+  "recall_macro": 0.10607142857142857,
+  "recall_weighted": 0.33904477095704827,
+  "fpr": 0.0116
+ },
+ "train0.01": {
+  "recall_macro": 0.09928571428571428,
+  "recall_weighted": 0.3218147802104015,
+  "fpr": 0.0098
+ }
+}

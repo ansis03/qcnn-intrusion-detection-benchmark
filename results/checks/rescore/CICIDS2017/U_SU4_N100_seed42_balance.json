@@ -1,0 +1,26 @@
+{
+ "key": "U_SU4_N100_seed42_balance",
+ "dataset": "CICIDS2017",
+ "N": 100,
+ "seed": 42,
+ "circuit": "U_SU4",
+ "method": "balance",
+ "n_cal": 10000,
+ "n_test_benign": 10000,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.09821746637586333,
+  "recall_weighted": 0.14706365498468255,
+  "fpr": 0.0008
+ },
+ "test0.01": {
+  "recall_macro": 0.14829009730727288,
+  "recall_weighted": 0.32830178508862556,
+  "fpr": 0.0105
+ },
+ "train0.01": {
+  "recall_macro": 0.14775120235998096,
+  "recall_weighted": 0.32721597595924934,
+  "fpr": 0.0099
+ }
+}

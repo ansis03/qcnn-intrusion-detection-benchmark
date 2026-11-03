@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N1000_seed45_balance",
+ "dataset": "NSL-KDD",
+ "N": 1000,
+ "seed": 45,
+ "circuit": "U_TTN",
+ "method": "balance",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.06875302734740174,
+  "recall_weighted": 0.1267463943630959,
+  "fpr": 0.00020593080724876442
+ },
+ "test0.01": {
+  "recall_macro": 0.27999999999999997,
+  "recall_weighted": 0.5886207750743147,
+  "fpr": 0.007825370675453048
+ },
+ "train0.01": {
+  "recall_macro": 0.292125,
+  "recall_weighted": 0.6082439722558626,
+  "fpr": 0.014313664916074555
+ }
+}

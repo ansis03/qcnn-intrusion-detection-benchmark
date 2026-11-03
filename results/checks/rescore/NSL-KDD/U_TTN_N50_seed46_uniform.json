@@ -1,0 +1,26 @@
+{
+ "key": "U_TTN_N50_seed46_uniform",
+ "dataset": "NSL-KDD",
+ "N": 50,
+ "seed": 46,
+ "circuit": "U_TTN",
+ "method": "uniform",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.13176307779052177,
+  "recall_weighted": 0.39835159088406913,
+  "fpr": 0.0012355848434925864
+ },
+ "test0.01": {
+  "recall_macro": 0.2175795478603691,
+  "recall_weighted": 0.47608471870527364,
+  "fpr": 0.008649093904448105
+ },
+ "train0.01": {
+  "recall_macro": 0.11229624816965747,
+  "recall_weighted": 0.3839061983926016,
+  "fpr": 0.0005148800329523221
+ }
+}

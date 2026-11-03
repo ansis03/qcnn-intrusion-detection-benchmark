@@ -1,0 +1,100 @@
+{
+ "key": "CNN0_N5000_seed44_uniform",
+ "dataset": "CICIDS2017",
+ "N": 5000,
+ "seed": 44,
+ "circuit": "CNN0",
+ "method": "uniform",
+ "auc_macro": 0.9480200228855047,
+ "auc_weighted": 0.9474325241665246,
+ "recall_macro": 0.44213939122520757,
+ "recall_weighted": 0.4509503103916055,
+ "fpr": 0.005333333333333333,
+ "threshold": 2.311141014099121,
+ "per_type": [
+  {
+   "type": "Bot",
+   "auc": 0.9049711620016965,
+   "recall": 0.002544529262086514,
+   "subset_count": 222
+  },
+  {
+   "type": "DDoS",
+   "auc": 0.9742708333333334,
+   "recall": 0.6175,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS GoldenEye",
+   "auc": 0.9584783333333333,
+   "recall": 0.6,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Hulk",
+   "auc": 0.9422591666666666,
+   "recall": 0.67,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS Slowhttptest",
+   "auc": 0.9890816666666666,
+   "recall": 0.5875,
+   "subset_count": 222
+  },
+  {
+   "type": "DoS slowloris",
+   "auc": 0.9849416666666666,
+   "recall": 0.345,
+   "subset_count": 222
+  },
+  {
+   "type": "FTP-Patator",
+   "auc": 0.9819525,
+   "recall": 0.475,
+   "subset_count": 222
+  },
+  {
+   "type": "Heartbleed",
+   "auc": 0.9998333333333334,
+   "recall": 1.0,
+   "subset_count": 9
+  },
+  {
+   "type": "Infiltration",
+   "auc": 0.8163333333333334,
+   "recall": 0.16666666666666666,
+   "subset_count": 30
+  },
+  {
+   "type": "PortScan",
+   "auc": 0.9276166666666668,
+   "recall": 0.005,
+   "subset_count": 222
+  },
+  {
+   "type": "SSH-Patator",
+   "auc": 0.9576933333333333,
+   "recall": 0.0,
+   "subset_count": 222
+  },
+  {
+   "type": "Web Attack \u2013 Brute Force",
+   "auc": 0.9820096153846153,
+   "recall": 0.7852564102564102,
+   "subset_count": 222
+  },
+  {
+   "type": "Web Attack \u2013 Sql Injection",
+   "auc": 0.8684999999999999,
+   "recall": 0.0,
+   "subset_count": 19
+  },
+  {
+   "type": "Web Attack \u2013 XSS",
+   "auc": 0.9843387096774194,
+   "recall": 0.9354838709677419,
+   "subset_count": 222
+  }
+ ]
+}

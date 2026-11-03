@@ -1,0 +1,16 @@
+{
+ "records": 152379,
+ "attacks": 118747,
+ "benign": 33632,
+ "attack_types": {
+  "ddos": 16039,
+  "scanning": 16012,
+  "injection": 15986,
+  "password": 15891,
+  "dos": 15194,
+  "backdoor": 14919,
+  "xss": 12082,
+  "ransomware": 11791,
+  "mitm": 833
+ }
+}

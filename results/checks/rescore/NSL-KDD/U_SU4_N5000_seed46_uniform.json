@@ -1,0 +1,26 @@
+{
+ "key": "U_SU4_N5000_seed46_uniform",
+ "dataset": "NSL-KDD",
+ "N": 5000,
+ "seed": 46,
+ "circuit": "U_SU4",
+ "method": "uniform",
+ "n_cal": 4855,
+ "n_test_benign": 4856,
+ "n_train_benign": 10000,
+ "test0.001": {
+  "recall_macro": 0.07792857142857143,
+  "recall_weighted": 0.03818286909611362,
+  "fpr": 0.0016474464579901153
+ },
+ "test0.01": {
+  "recall_macro": 0.12364791720805038,
+  "recall_weighted": 0.1393661235274689,
+  "fpr": 0.009266886326194398
+ },
+ "train0.01": {
+  "recall_macro": 0.10744695014264723,
+  "recall_weighted": 0.10561653638665638,
+  "fpr": 0.007002368448151581
+ }
+}

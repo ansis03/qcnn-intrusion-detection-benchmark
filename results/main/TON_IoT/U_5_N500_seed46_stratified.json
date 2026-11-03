@@ -1,0 +1,90 @@
+{
+ "key": "U_5_N500_seed46_stratified",
+ "dataset": "TON_IoT",
+ "N": 500,
+ "seed": 46,
+ "circuit": "U_5",
+ "method": "stratified",
+ "attack_records": 390,
+ "selected_types": 9,
+ "auc_macro": 0.8180474786324786,
+ "auc_weighted": 0.8418615149728838,
+ "recall_macro": 0.2749572649572649,
+ "recall_weighted": 0.3132201805504093,
+ "fpr": 0.01,
+ "threshold": 0.7490937313482914,
+ "per_type": [
+  {
+   "type": "backdoor",
+   "auc": 0.9955816666666667,
+   "recall": 0.99,
+   "test_count": 3792,
+   "evaluated_count": 400,
+   "subset_count": 44
+  },
+  {
+   "type": "ddos",
+   "auc": 0.7172404166666666,
+   "recall": 0.0025,
+   "test_count": 3954,
+   "evaluated_count": 400,
+   "subset_count": 56
+  },
+  {
+   "type": "dos",
+   "auc": 0.9615549999999999,
+   "recall": 0.8375,
+   "test_count": 3798,
+   "evaluated_count": 400,
+   "subset_count": 59
+  },
+  {
+   "type": "injection",
+   "auc": 0.7447341666666667,
+   "recall": 0.0175,
+   "test_count": 3978,
+   "evaluated_count": 400,
+   "subset_count": 52
+  },
+  {
+   "type": "mitm",
+   "auc": 0.6497964743589744,
+   "recall": 0.009615384615384616,
+   "test_count": 208,
+   "evaluated_count": 208,
+   "subset_count": 1
+  },
+  {
+   "type": "password",
+   "auc": 0.8063841666666667,
+   "recall": 0.2375,
+   "test_count": 3970,
+   "evaluated_count": 400,
+   "subset_count": 40
+  },
+  {
+   "type": "ransomware",
+   "auc": 0.7901979166666666,
+   "recall": 0.095,
+   "test_count": 2944,
+   "evaluated_count": 400,
+   "subset_count": 42
+  },
+  {
+   "type": "scanning",
+   "auc": 0.9856383333333333,
+   "recall": 0.2025,
+   "test_count": 3988,
+   "evaluated_count": 400,
+   "subset_count": 60
+  },
+  {
+   "type": "xss",
+   "auc": 0.7112991666666666,
+   "recall": 0.0825,
+   "test_count": 3055,
+   "evaluated_count": 400,
+   "subset_count": 36
+  }
+ ]
+}
